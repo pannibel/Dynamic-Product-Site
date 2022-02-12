@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Product List</title>
+</head>
+
+
+<body class="productlist">
+    <header class="mainnav">
+        <h1>Shop Here Bitches</h1>
+        <nav>
+            <a href="category.html">Categories</a>
+            <a href="productlist.html">Product List</a>
+        </nav>
+    </header>
+
+<main>
+<h2>Apparel</h2>  
+
+<div class="productlist">
+    <template id="listproducttemplate">
+        <article class="smallProduct">
+    <img src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp" class="productImage" alt="apparel">
+    <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+
+    <p class="subtle">Tshirts | Nike</p>
+    <p class="price">
+    <span>Prev.</span>
+    DKK 1595,-
+    </p>
+
+    <div class="discounted">
+        <p>Now DKK 1560,-</p>
+        <p>-34%</p>
+    </div>
+    <a class="productlink" href="product.html">See More</a>
+</article>
+</template>
+
+
+<!-- <article class="smallProduct onSale">
+    <img>
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+    <p class="subtle">Tshirts | Nike</p>
+
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-
+    </p>
+    
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct soldOut">
+    <img>
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+    <p class="subtle">Tshirts | Nike</p>
+
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-
+    </p>
+
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct soldOut onSale">
+    <img = "">
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+
+    <p class="subtle">Tshirts | Nike</p>
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-
+    </p>
+
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct">
+    <img>
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+    <p class="subtle">Tshirts | Nike</p>
+
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-</p>
+
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct">
+    <img>
+    <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+    <p class="subtle">Tshirts | Nike</p>
+
+    <p class="price">
+    <span>Prev.</span>
+    DKK 1595,-
+    </p>
+
+    <div class="discounted">
+        <p>Now DKK 1560,-</p>
+        <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct onSale">
+    <img>
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+    <p class="subtle">Tshirts | Nike</p>
+
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-
+    </p>
+    
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct soldOut">
+    <img>
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+    <p class="subtle">Tshirts | Nike</p>
+
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-
+    </p>
+
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct soldOut onSale">
+    <img>
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+
+    <p class="subtle">Tshirts | Nike</p>
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-
+    </p>
+
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct">
+    <img>
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+    <p class="subtle">Tshirts | Nike</p>
+
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-</p>
+
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct">
+    <img>
+    <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+    <p class="subtle">Tshirts | Nike</p>
+
+    <p class="price">
+    <span>Prev.</span>
+    DKK 1595,-
+    </p>
+
+    <div class="discounted">
+        <p>Now DKK 1560,-</p>
+        <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct onSale">
+    <img>
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+    <p class="subtle">Tshirts | Nike</p>
+
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-
+    </p>
+    
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct soldOut">
+    <img>
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+    <p class="subtle">Tshirts | Nike</p>
+
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-
+    </p>
+
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct soldOut onSale">
+    <img>
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+
+    <p class="subtle">Tshirts | Nike</p>
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-
+    </p>
+
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article>
+
+<article class="smallProduct">
+    <img>
+    <h3>Blue T20 Indian Cricket Jersey</h3>
+    <p class="subtle">Tshirts | Nike</p>
+
+    <p class="price">
+        <span>Prev.</span>
+        DKK 1595,-</p>
+
+    <div class="discounted">
+      <p>Now DKK 1560,-</p>
+      <p>-34%</p>
+    </div>
+    <a href="product.html">Read More</a>
+</article> -->
+
+</div>
+</main> 
+
+<script src="JS/productlist.js"></script>
+</body>
+</html>
