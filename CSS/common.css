@@ -40,13 +40,13 @@ h3 {
 
 p {
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: monospace;
     font-weight: normal;
 }
 
 span {
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: monospace;
     font-weight: normal;
 }
 
@@ -67,6 +67,10 @@ a, li.category, li.productname {
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.categorybody li a {
+    font-family: monospace;
 }
 
 .productlist a {
@@ -126,4 +130,8 @@ a:hover {
 a:active {
     color:#000000;
     text-decoration: none;
+}
+
+.hidden {
+    visibility: hidden;
 }

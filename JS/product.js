@@ -20,8 +20,8 @@ function showProduct(product) {
     product.productdisplayname;
   document.querySelector(".purchasebox .brandandtype").textContent =
     product.brandname + " | " + product.productdisplayname;
-  document.querySelector(".productinfo .subtle").textContent =
-    product.brandname + " | " + product.productdisplayname;
+
+  document.querySelector(".purchasebox .price").textContent = product.price + " DKK";
 
   product.productdisplayname;
   document.querySelector(
@@ -30,5 +30,55 @@ function showProduct(product) {
   document.querySelector("img.productImage").alt = product.productdisplayname;
 
   document.querySelector(".subtle").textContent =
-  `${product.articletype} | ${product.brandname}`;
+  `${product.productdisplayname} | ${product.brandname}`;
+  document.querySelector(".subcategory").textContent = `Subcategory: ${product.subcategory}`;
+  document.querySelector(".type").textContent = `Type: ${product.articletype}`;
+  document.querySelector(".color").textContent = `Colour: ${product.basecolour}`;
+
+  document.querySelector(".productionyear").textContent = `Production year: ${product.productionyear}`;
   }
+
+  /* DISCOUNT */
+
+  /*        <template class="discounttemplate">
+        <div class="discounted">
+            <p>Now DKK 1560,-</p>
+            <p>-34%</p> 
+        </div>   
+        </template>  */
+ 
+
+  function showDiscount(product) {
+    console.log(product);
+    // grab the template
+    const template = document.querySelector(".discounttemplate").content;
+    // clone the template
+    const copy = template.cloneNode(true);
+  
+  /*   copy
+      .querySelector(".productLink")
+      .setAttribute("href", `productview.html?id=${product.id}`); */
+
+    if (product.discount > 0) {
+      copy.querySelector(".discounted").classList.add("onSale");
+      // copy.querySelector("span").style.display = "block";
+    } else {
+      copy.querySelector(".discounted").style.display = "none";
+      // copy.querySelector("span").style.display = "none";
+    }
+  
+    const newPrice = Math.round(
+      product.price - (product.price / 100) * product.discount
+    );
+  
+    copy.querySelector(".discounted p").textContent =
+      "On sale for" + " " + `${newPrice}`+ " " + "DKK";
+  
+    //change the template content
+    const parent = document.querySelector(".purchasebox");
+  
+    // grab parent
+    parent.appendChild(copy);
+  
+    //append template
+    }
